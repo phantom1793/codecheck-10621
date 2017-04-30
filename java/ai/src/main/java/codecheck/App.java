@@ -48,11 +48,11 @@ class AI{
 			}
 		} catch(FileNotFoundException e){
 			System.out.println(e);
-			System.out.println("代替データを使用します。");
+			//System.out.println("代替データを使用します。");
 			this.get_alternative_words();
 		} catch(IOException e){
 			System.out.println(e);
-			System.out.println("代替データを使用します。");
+			//System.out.println("代替データを使用します。");
 			this.get_alternative_words();
 		}
 	}
@@ -86,11 +86,9 @@ class AI{
 		for(int i = 0;i < enable_words.size();i++){
 			String temp_str = enable_words.get(i);
 			if(this.get_match_words_count(temp_str,list) == 0){
-				//System.out.println("strategy1 succeed:"+temp_str);
 				return temp_str;
 			}
 		}
-		//System.out.println("stragety1 failed");
 		return "";
 	}
 	//作戦その２:末尾後から始まる単語群のそれぞれの末尾語から始まる単語数が1以上のものを選ぶ
@@ -107,11 +105,9 @@ class AI{
 				}
 			}
 			if(word_OK){
-				System.out.println("strategy2 succeed:"+enable_words.get(i));
 				return enable_words.get(i);
 			}
 		}
-		System.out.println("strategy2 failed");
 		return "";
 	}
 	//末尾語からなる適当な単語を返す
