@@ -14,13 +14,17 @@ class Game {
 	Boolean judge(Player player,String str){
 		for(int i = 0;i < this.left_words.size();i++){
 			if(str.equals(this.left_words.get(i))){
-				System.out.println(player.name+"(OK): "+str);
+				System.out.println(player.name+" (OK): "+str);
 				this.now_word = str;
 				this.left_words.remove(this.left_words.indexOf(str));
 				return true;
 			}
 		}
-		System.out.println(player.name+"(NG): "+str);
+		System.out.println(player.name+" (NG): "+str);
+		if(player.name.equals("FIRST"))
+			System.out.println("WIN - SECOND");
+		else
+			System.out.println("WIN - FIRST");
 		return false;
 	}
 	void game_start(Player first,Player second){

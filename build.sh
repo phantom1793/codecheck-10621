@@ -12,3 +12,6 @@ mvn package -Dmaven.test.skip=true
 # cd $ROOT/python/src
 # python -m compileall .
 
+### Node.js ###
+# cd $ROOT/nodejs/src
+# node make_word.js

@@ -47,11 +47,11 @@ class AI{
 				this.knowladge.add(tokenizer.nextToken());
 			}
 		} catch(FileNotFoundException e){
-			System.out.println(e);
+			//System.out.println(e);
 			//System.out.println("代替データを使用します。");
 			this.get_alternative_words();
 		} catch(IOException e){
-			System.out.println(e);
+			//System.out.println(e);
 			//System.out.println("代替データを使用します。");
 			this.get_alternative_words();
 		}
