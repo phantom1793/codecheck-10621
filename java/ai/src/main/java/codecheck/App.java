@@ -116,7 +116,7 @@ class AI{
 		List<String> s_knowladge = this.get_s_words_list(s,this.knowladge);
 		//末尾後からなる単語がない場合nullを返す
 		if(s_knowladge.size() == 0){
-			return null;
+			return "";
 		} else{
 			long seed = System.currentTimeMillis();
 			Random rnd = new Random(seed);

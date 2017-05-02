@@ -8,7 +8,7 @@
 
 ### Node.jsで上記の乗換案内サービスを作り変えた
 - URL
-  - http://patrash.ait.kyushu-u.ac.jp:8080/norikae?station_id=undefined
+  - http://patrash.ait.kyushu-u.ac.jp:8080
 - 補足
   - 九州大学伊都キャンパス案内アプリ(http://itocamlife.go1.jp/itocamlife/)の付加サービスとして開発した
 - 工夫点
